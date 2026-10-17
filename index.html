@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammad Asad Ali | Web, AI and Game Developer</title>
+<meta name="description" content="Portfolio of Muhammad Asad Ali, a web developer from Lahore who also builds AI, machine learning and games.">
+<meta name="theme-color" content="#14102b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2226%22 fill=%22%23ffd23f%22/><text x=%2250%22 y=%2271%22 font-size=%2262%22 font-weight=%22800%22 text-anchor=%22middle%22 fill=%22%2314102b%22>A</text></svg>"><text y=%22.9em%22 font-size=%2290%22>🥭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><span id="count">0</span><p>Loading portfolio</p></div>
+<div class="cursor" aria-hidden="true"></div>
+<div id="bar"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a href="#top" class="logo">Asad.</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#play">Play</a><a href="#path">Journey</a>
+    <a href="#contact" class="pill">Hire me</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <h1 aria-label="Muhammad Asad Ali">
+    <span class="line"><span class="split">Muhammad</span></span>
+    <span class="line"><span class="split c2">Asad Ali</span></span>
+  </h1>
+  <p class="role">Currently a <b id="role"></b><span class="caret"></span></p>
+  <p class="lead">I build fast websites, teach machines to spot patterns and make small games. Based in Lahore, studying computer science at COMSATS.</p>
+  <div class="cta"><a class="btn b1" href="#work">See my work</a><a class="btn b2" href="#contact">Say hello</a></div>
+  <svg class="badge" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="cp" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><g class="ring"><text><textPath href="#cp">Web • AI • Machine Learning • Game Dev • </textPath></text></g><circle cx="100" cy="100" r="36" fill="#ffd23f"/><text x="100" y="113" text-anchor="middle" font-size="36" font-weight="800" fill="#14102b" style="font-family:Syne,sans-serif">AA</text></svg>
+</section>
+
+<div class="marquee" aria-hidden="true"><div>
+  <span>Web Development</span><span>Artificial Intelligence</span><span>Machine Learning</span><span>Game Development</span><span>React</span><span>Node.js</span><span>Python</span>
+  <span>Web Development</span><span>Artificial Intelligence</span><span>Machine Learning</span><span>Game Development</span><span>React</span><span>Node.js</span><span>Python</span>
+</div></div>
+
+<section id="about" class="sec" style="--a:var(--sky)">
+  <h2>About me</h2>
+  <div class="two">
+    <p class="big">I started with HTML and CSS, moved to React and Node.js, and now I am pulling AI, machine learning and game development into the way I build.</p>
+    <div>
+      <p>I am a computer science student at COMSATS University Islamabad, Lahore Campus (2024 to 2028). I enjoy turning an idea into something people can click, play or order from, and I care about pages that load fast and work on every phone.</p>
+      <p>I speak English, Urdu and Punjabi, and I am comfortable with Microsoft Word, Excel and PowerPoint for the less glamorous parts of a project.</p>
+      <ul class="facts">
+        <li><b>Studying</b> BS at COMSATS Lahore, 2024 to 2028</li>
+        <li><b>Courses</b> OOP, DSA, Software Dev, Web, App Dev, AI</li>
+        <li><b>Languages</b> English, Urdu, Punjabi</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec" style="--a:var(--mint)">
+  <h2>What I work with</h2>
+  <div class="grid4">
+    <article class="panel p1 tilt"><h3>Web</h3><p>Interfaces and servers that feel quick.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>Bootstrap</span><span>Next.js</span></div><div class="meter" style="--v:90%"></div></article>
+    <article class="panel p2 tilt"><h3>AI</h3><p>Using models and APIs to make apps smarter.</p><div class="chips"><span>Python</span><span>Prompting</span><span>LLM APIs</span><span>Chatbots</span><span>Computer vision</span></div><div class="meter" style="--v:62%"></div></article>
+    <article class="panel p3 tilt"><h3>Machine learning</h3><p>Training and testing models on real data.</p><div class="chips"><span>NumPy</span><span>Pandas</span><span>scikit-learn</span><span>TensorFlow</span><span>Jupyter</span></div><div class="meter" style="--v:55%"></div></article>
+    <article class="panel p4 tilt"><h3>Game dev</h3><p>Loops, physics and play in the browser and engines.</p><div class="chips"><span>Canvas API</span><span>Game loops</span><span>Unity</span><span>Godot</span><span>C#</span></div><div class="meter" style="--v:58%"></div></article>
+  </div>
+</section>
+
+<section id="work" class="sec" style="--a:var(--coral)">
+  <h2>Selected work</h2>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button class="on" data-f="all">All</button><button data-f="web">Web</button><button data-f="ai">AI</button><button data-f="ml">ML</button><button data-f="game">Game</button>
+  </div>
+  <div class="cards">
+    <article class="card tilt" data-t="web" style="--c1:#ffb703;--c2:#fb5607"><div class="art"><i></i><i></i><i></i><b>Web build</b></div><h3>Al-Wasay Mangoes</h3><p>Brand site and catalog for a Muzaffargarh mango business, with every variety and one-tap WhatsApp ordering.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JS</span></div></article>
+    <article class="card tilt" data-t="web" style="--c1:#c77dff;--c2:#7b2cbf"><div class="art"><i></i><i></i><i></i><b>Web build</b></div><h3>Thrift Vestige</h3><p>E-commerce front end for a thrift fashion brand: product grid, cart and a checkout flow built for phones first.</p><div class="chips"><span>Next.js</span><span>Tailwind</span></div></article>
+    <article class="card tilt" data-t="web" style="--c1:#4cc9f0;--c2:#4361ee"><div class="art"><i></i><i></i><i></i><b>Web build</b></div><h3>School management system</h3><p>Web app for students, teachers and fee records, with role-based dashboards.</p><div class="chips"><span>Next.js</span><span>TypeScript</span></div></article>
+    <article class="card tilt" data-t="web" style="--c1:#3ddbb5;--c2:#118ab2"><div class="art"><i></i><i></i><i></i><b>Web build</b></div><h3>Cosmic Gloss auto detailing</h3><p>Local SEO landing pages for a Greater Toronto Area detailing studio, focused on search and bookings.</p><div class="chips"><span>SEO</span><span>Landing pages</span></div></article>
+    <article class="card tilt" data-t="ai ml" style="--c1:#ff5e5b;--c2:#9d0208"><div class="art"><i></i><i></i><i></i><b>AI and ML</b></div><h3>Digit recognizer</h3><p>A small neural network trained on MNIST, plus a canvas where you draw a digit and see the prediction.</p><div class="chips"><span>Python</span><span>TensorFlow</span></div></article>
+    <article class="card tilt" data-t="ml" style="--c1:#ffd23f;--c2:#06d6a0"><div class="art"><i></i><i></i><i></i><b>Machine learning</b></div><h3>House price predictor</h3><p>Regression models compared on a public housing dataset, with feature plots and error metrics.</p><div class="chips"><span>Pandas</span><span>scikit-learn</span></div></article>
+    <article class="card tilt" data-t="ai" style="--c1:#8b5cf6;--c2:#ec4899"><div class="art"><i></i><i></i><i></i><b>AI project</b></div><h3>Study buddy chatbot</h3><p>A chat assistant that answers questions from class notes using an LLM API.</p><div class="chips"><span>Node.js</span><span>LLM API</span></div></article>
+    <article class="card tilt" data-t="game" style="--c1:#ff9f1c;--c2:#e71d36"><div class="art"><i></i><i></i><i></i><b>Game dev</b></div><h3>Mango Catcher</h3><p>A playable browser game you can try right below. Catch mangoes, dodge rocks.</p><div class="chips"><span>Canvas</span><span>JavaScript</span></div></article>
+  </div>
+</section>
+
+<section id="play" class="sec" style="--a:var(--lemon)">
+  <h2>Try my game</h2>
+  <p class="sub">Move with the mouse, your finger or the arrow keys. Catch mangoes, dodge rocks, you have three lives.</p>
+  <div class="gamebox">
+    <canvas id="game" width="640" height="380" aria-label="Mango Catcher game"></canvas>
+    <div class="hud"><span>Score <b id="score">0</b></span><span>Best <b id="best">0</b></span><span>Lives <b id="lives">3</b></span></div>
+    <button id="start" class="btn b3">Start game</button>
+  </div>
+</section>
+
+<section id="path" class="sec" style="--a:var(--violet)">
+  <h2>Journey</h2>
+  <div class="two">
+    <div>
+      <h3 class="h3">Experience</h3>
+      <ol class="tl">
+        <li><time>2023 to now</time><b>Freelance web developer</b><p>Built business sites and web apps for local brands, from design to launch.</p></li>
+        <li><time>2022 to now</time><b>Digital lead, Al-Wasay Mangoes</b><p>Runs the brand, product photos, promos and the online catalog.</p></li>
+        <li><time>2024 to now</time><b>Local SEO consultant</b><p>Landing pages and ranking strategy for service businesses.</p></li>
+      </ol>
+      <h3 class="h3">Education</h3>
+      <ol class="tl">
+        <li><time>2024 to 2028</time><b>COMSATS University Islamabad, Lahore</b><p>Computer science: OOP, DSA, software development, web, app development, AI.</p></li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="h3">Learning now</h3>
+      <div class="learn">
+        <div><span>Machine learning</span><i style="--v:55%"></i></div>
+        <div><span>Deep learning with PyTorch</span><i style="--v:35%"></i></div>
+        <div><span>Unity and C#</span><i style="--v:50%"></i></div>
+        <div><span>Godot and GDScript</span><i style="--v:30%"></i></div>
+        <div><span>TypeScript and Next.js</span><i style="--v:70%"></i></div>
+        <div><span>Data structures and algorithms</span><i style="--v:60%"></i></div>
+      </div>
+      <h3 class="h3">Certifications</h3>
+      <div class="chips big-chips"><span>Computer expert</span><span>Microsoft Word</span><span>Excel</span><span>PowerPoint</span><span>Artificial Intelligence</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec contact" style="--a:var(--coral)">
+  <h2>Let's build something</h2>
+  <div class="two">
+    <div>
+      <p class="big">Have a site, an app or a game idea? Send a message and I will reply within a day.</p>
+      <p><a class="mail" href="mailto:asadhafeezsh@gmail.com">asadhafeezsh@gmail.com</a></p>
+      <p><a href="tel:+923287326162">+92 328 7326162</a><br>LDA Avenue, J Block, Lahore</p>
+    </div>
+    <form id="form">
+      <label>Your name<input name="n" required autocomplete="name"></label>
+      <label>Your email<input name="e" type="email" required autocomplete="email"></label>
+      <label>Your message<textarea name="m" rows="4" required></textarea></label>
+      <button class="btn b2" type="submit">Send message</button>
+      <p id="note" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer>© <span id="yr"></span> Muhammad Asad Ali. Made by hand with HTML, CSS and JavaScript.</footer>
+<script src="script.js"></script>
+</body>
+</html>
